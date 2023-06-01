@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1 style="font-weight: bolder;">COMPONENTES</h1><br><br>
+    <h1 style="font-weight: bolder;">DADOS EM COMPONENTES</h1><br><br>
 
     <PrimeiroComponente />
+    <p>O dado de app é {{ testando }}</p>
     </div>
 </template>
 
@@ -13,6 +14,11 @@
     name: 'App', 
     components: {
       PrimeiroComponente
+    },
+    data() {
+      return {
+        testando: 'TESTE'
+      }
     }
   }
 </script>
