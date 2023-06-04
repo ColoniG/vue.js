@@ -9,18 +9,26 @@
             <li>PHP</li>
         </ul>
         <p v-show="mostrar_email">Mande mensagem para: {{ email }}</p>
+        <p>Para acessar meu portifólio <a v-bind:href="meu_link" target="blank">basta clicar aqui</a></p>
+        <Picture />
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'Info',
-        data() {
-            return{
-                esta_trabalhando: false, 
-                mostrar_email: q,
-                email: 'gilson@email.com'
-            }
+import Picture from './Picture.vue'
+    
+export default {  
+    name: 'Info',
+    components: { 
+        Picture
+    },
+    data() {
+        return{
+            esta_trabalhando: false, 
+            mostrar_email: true,
+            email: 'gilson@email.com',
+            meu_link: 'https://google.com'
         }
     }
+}
 </script>
