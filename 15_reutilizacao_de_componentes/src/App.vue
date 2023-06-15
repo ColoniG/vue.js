@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 style="font-weight: bolder;">Multiplos Eventos</h1>
+    <h1 style="font-weight: bolder;">Reutilização de Componente</h1>
     <br><br>
     
     <Header />
