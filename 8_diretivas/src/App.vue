@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1 style="font-weight: bolder;">Conhecendo as diretivas (v-if, v-show, v-for)</h1>
-    <br><br>    
+    <Introducao />
+		<br><br><br><br>
+    
+    
     <PrimeiroComponente />
     <p>O dado de app é: {{ testando }}</p>
     <LifeCycle />
@@ -10,6 +12,7 @@
 </template>
 
 <script>
+  import Introducao from './components/Introducao.vue'
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Pessoa from './components/Pessoa.vue'
@@ -17,6 +20,7 @@
   export default {
     name: 'App', 
     components: {
+      Introducao,
       PrimeiroComponente,
       LifeCycle,
       Pessoa

@@ -5,7 +5,10 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <div>
-    <h1 style="font-weight: bolder; text-align: center;">PROJETO VITE</h1><br><br>
+    <h1 style="font-weight: bolder; text-align: center;">PROJETO VITE</h1>
+    <img alt="Introdução" src="./assets/intro.png" />
+    <br><br>
+    
     <header>
       <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
       <div class="wrapper">

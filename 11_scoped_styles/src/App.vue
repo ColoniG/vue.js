@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1 style="font-weight: bolder;">CSS global e scoped</h1>
-    <br><br>
+    <Introducao />
+		<br><br><br><br>
+
     
     <Header />
     <PrimeiroComponente />
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import Introducao from './components/Introducao.vue'
   import Header from './components/Header.vue'
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
@@ -21,6 +23,7 @@
   export default {
     name: 'App', 
     components: {
+      Introducao,
       Header,
       PrimeiroComponente,
       LifeCycle,

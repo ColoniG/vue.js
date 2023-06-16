@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 style="font-weight: bolder;">LIFeCYCLE HOOKS</h1>
-    <br><br>    
+    <Introducao />
+		<br><br><br><br>  
 
     <PrimeiroComponente />
     <p>O dado de app é: {{ testando }}</p>
@@ -10,12 +10,14 @@
 </template>
 
 <script>
+  import Introducao from './components/Introducao.vue'
   import PrimeiroComponente from './components/PrimeiroComponente.vue'
   import LifeCycle from './components/LifeCycle.vue'
 
   export default {
     name: 'App', 
     components: {
+      Introducao,
       PrimeiroComponente,
       LifeCycle
     },
